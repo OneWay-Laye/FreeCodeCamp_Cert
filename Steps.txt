@@ -51,3 +51,13 @@ All img elements should have an alt attribute. The alt attribute's text is used 
 Inside the img element, add an alt attribute with this text:
 
 A cute orange cat lying on its back
+
+                        Step 10
+You can link to another page with the anchor (a) element. For example, <a href='https://freecodecamp.org'></a> would link to freecodecamp.org.
+
+Add an anchor element after the paragraph that links to https://freecatphotoapp.com. At this point, the link won’t show up in the preview.
+
+                        Step 11
+A link's text must be placed between the opening and closing tags of an anchor (a) element. For example, <a href="https://www.freecodecamp.org">click here to go to freeCodeCamp.org</a> is a link with the text click here to go to freeCodeCamp.org.
+
+Add the anchor text link to cat pictures to the anchor element. This will become the link's text.
