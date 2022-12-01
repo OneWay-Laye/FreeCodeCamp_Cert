@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CatPhotoApp</title>
 </head>
 <body>
     <main>
@@ -44,19 +44,22 @@
             <form action="https://freecatphotoapp.com/submit-cat-photo">
                 <fieldset>
                     <legend>Is your cat an indoor or outdoor cat?</legend>
-                    <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor"> Indoor</label>
+                    <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor" checked> Indoor</label>
                     <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">Outdoor</label>
                 </fieldset>
                 <fieldset>
                     <legend>What's your cat's personality?</legend>
-                    <input type="checkbox" id="loving" name="personality"> <label for="loving"> Loving </label>
-                    <input type="checkbox" id="lazy" name="personality"> <label for="lazy"> Lazy </label>
-                    <input type="checkbox" id="energetic" name="personality"> <label for="energetic"> Energetic </label>
+                    <input type="checkbox" id="loving" name="personality" value="loving" checked> <label for="loving"> Loving </label>
+                    <input type="checkbox" id="lazy" name="personality" value="lazy"> <label for="lazy"> Lazy </label>
+                    <input type="checkbox" id="energetic" name="personality" value="energetic"> <label for="energetic"> Energetic </label>
                 </fieldset>
                 <input type="text" name="catphotourl" placeholder="cat photo URL" required>
                 <button type="submit">Submit</button>
             </form>
         </section>
     </main>
+    <footer>
+        <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer>
 </body>
 </html>
