@@ -61,3 +61,38 @@ Add an anchor element after the paragraph that links to https://freecatphotoapp.
 A link's text must be placed between the opening and closing tags of an anchor (a) element. For example, <a href="https://www.freecodecamp.org">click here to go to freeCodeCamp.org</a> is a link with the text click here to go to freeCodeCamp.org.
 
 Add the anchor text link to cat pictures to the anchor element. This will become the link's text.
+
+                        Step 12
+In the previous step you turned the words link to cat pictures into a link by placing them between opening and closing anchor (a) tags. You can do the same to words inside of an element, such as a p element.
+
+In the text of your p element, turn the words cat photos into a link to https://freecatphotoapp.com by adding opening and closing anchor (a) tags around these words.
+
+                        Step 13
+Now that you turned the text cat photos inside the p element into a link, you don't need the second link below the p element. Delete the entire anchor element below the p element.
+
+                        Step 14
+Add a target attribute with the value _blank to the anchor (a) element's opening tag, so that the link opens in a new tab.
+
+                        Step 15
+Turn the image into a link by surrounding it with necessary element tags. Use https://freecatphotoapp.com as the anchor's href attribute value.
+
+                        Step 16
+Before adding any new content, you should make use of a section element to separate the cat photos content from the future content.
+
+Take your h2, comment, p, and anchor (a) elements and nest them in a section element.
+
+                        Step 17
+It is time to add a new section. Add a second section element below the existing section element.
+
+                        Step 18
+Within the second section element, add a new h2 element with the text Cat Lists.
+
+                        Step 19
+When you add a lower rank heading element to the page, it's implied that you're starting a new subsection.
+
+After the last h2 element of the second section element, add an h3 element with this text:
+
+Things cats love:
+
+                        Step 20
+After the h3 element with the Things cats love: text, add an unordered list (ul) element. Note that nothing will be displayed at this point.
