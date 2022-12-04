@@ -1,0 +1,14 @@
+/* Elements */
+
+h1 { 
+    text-align: center;
+  }
+
+/* Classes */
+
+.marker {
+    background-color: red;
+    height: 25px;
+    width: 200px;
+    margin: 10px auto;
+  }
