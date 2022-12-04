@@ -302,3 +302,51 @@ Step 75
 Changing the margin-bottom to 5px looks great. However, now the space between the Cinnamon Roll menu item and the second hr element does not match the space between the top hr element and the Coffee heading.
 
 Add some more space by creating a class named bottom-line using 25px for the margin-top property.
+
+Step 76
+Now add the bottom-line class to the second hr element so the styling is applied.
+
+Step 77
+Next you are going to be styling the footer element. To keep the CSS organized, add a comment at the end of styles.css with the text FOOTER.
+
+Step 78
+Moving down to the footer element, make all the text have a value of 14px for the font size.
+
+Step 79
+The default color of a link that has not yet been clicked on is typically blue. The default color of a link that has already been visited from a page is typically purple.
+
+To make the footer links the same color regardless if a link has been visited, use a type selector for the anchor element (a) and use the value black for the color property.
+
+Step 80
+You change properties of a link when the link has actually been visited by using a pseudo-selector that looks like a:visited { propertyName: propertyValue; }.
+
+Change the color of the footer Visit our website link to be grey when a user has visited the link.
+
+Step 81
+You change properties of a link when the mouse hovers over them by using a pseudo-selector that looks like a:hover { propertyName: propertyValue; }.
+
+Change the color of the footer Visit our website link to be brown when a user hovers over it.
+
+Step 82
+You change properties of a link when the link is actually being clicked by using a pseudo-selector that looks like a:active { propertyName: propertyValue; }.
+
+Change the color of the footer Visit our website link to be white when clicked on.
+
+Step 83
+To keep with the same color theme you have already been using (black and brown), change the color for when the link is visited to black and use brown for when the link is actually clicked.
+
+Step 84
+The menu text CAMPER CAFE has a different space from the top than the address's space at the bottom of the menu. This is due to the browser having some default top margin for the h1 element.
+
+Change the top margin of the h1 element to 0 to remove all the top margin.
+
+Step 85
+To remove some of the vertical space between the h1 element and the text Est. 2020, change the bottom margin of the h1 to 15px.
+
+Step 86
+Now the top spacing looks good. The space below the address at the bottom of the menu is a little bigger than the space at the top of the menu and the h1 element.
+
+To decrease the default margin space below the address p element, create a class selector named address and use the value 5px for the margin-bottom property.
+
+Step 87
+Now apply the address class to the p element containing the address.
