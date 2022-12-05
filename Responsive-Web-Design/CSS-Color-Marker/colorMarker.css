@@ -7,8 +7,24 @@ h1 {
 /* Classes */
 
 .marker {
-    background-color: red;
     height: 25px;
     width: 200px;
     margin: 10px auto;
+  }
+
+  .one {
+    background-color: rgb(255, 127, 0);
+  }
+
+  .two{
+    background-color: rgb(0, 255, 127);
+  }
+
+  .three {
+    background-color: rgb(255, 0, 255);
+  }
+
+  .container {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
   }
