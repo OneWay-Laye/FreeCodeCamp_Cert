@@ -339,3 +339,87 @@ Step 66
 Now you'll apply a gradient to the blue marker, this time using the hsl function as color arguments.
 
 In the .blue CSS rule, change the background-color property to background.
+
+Step 67
+Use the linear-gradient function, and pass in the hsl function with the values 186 for hue, 76% for saturation, and 16% for lightness as the first color argument.
+
+Step 68
+As the second color argument, pass in the hsl function with the values 223 for hue, 90% for saturation, and 60% for lightness.
+
+Step 69
+And as the third color argument, pass in the hsl function with the values 240 for hue, 56% for saturation, and 42% for lightness.
+
+Step 70
+Now that the markers have the correct colors, it's time to build the marker sleeves. Start with the red marker.
+
+Inside the red marker div, create a new div and give it a class of sleeve.
+
+Step 71
+Create a new CSS rule that targets the class sleeve. Set the width property to 110px, and the height property to 25px.
+
+Step 72
+To make the marker look more realistic, give the sleeve a transparent white color.
+
+First, set the sleeve element's background-color to white.
+
+Step 73
+Opacity describes how opaque, or non-transparent, something is. For example, a solid wall is opaque, and no light can pass through. But a drinking glass is much more transparent, and you can see through the glass to the other side.
+
+With the CSS opacity property, you can control how opaque or transparent an element is. With the value 0, or 0%, the element will be completely transparent, and at 1.0, or 100%, the element will be completely opaque like it is by default.
+
+In the .sleeve CSS rule, set the opacity property to 0.5.
+
+Step 74
+Another way to set the opacity for an element is with the alpha channel. Similar to the opacity property, the alpha channel controls how transparent or opaque a color is.
+
+You've already set sleeve's opacity with a named color and the opacity property, but you can add an alpha channel to the other CSS color properties.
+
+Inside the .sleeve rule, remove the opacity property and value.
+
+Step 75
+You're already familiar with using the rgb function to set colors. To add an alpha channel to an rgb color, use the rgba function instead.
+
+The rgba function works just like the rgb function, but takes one more number from 0 to 1.0 for the alpha channel:
+
+rgba(redValue, greenValue, blueValue, alphaValue);
+In the .sleeve rule, use the rgba function to set the background-color property to pure white with 50% opacity.
+
+Step 76
+Your sleeve is looking good, but it would look even better if it was positioned more toward the right side of the marker. One way to do that is to add another element before the sleeve to push it to the right.
+
+Add a new div with the class cap before the sleeve div element.
+
+Step 77
+Create a new CSS rule to target the class cap. In the new rule, set the width property to 60px, and the height to 25px.
+
+Step 79
+In the last project, you learned a little bit about borders and the border-color property.
+
+All HTML elements have borders, though they're usually set to none by default. With CSS, you can control all aspects of an element's border, and set the border on all sides, or just one side at a time. For a border to be visible, you need to set its width and style.
+
+In the .sleeve CSS rule, add the border-left-width property with the value 10px.
+
+Step 80
+Borders have several styles to choose from. You can make your border a solid line, but you can also use a dashed or dotted line if you prefer. Solid border lines are probably the most common.
+
+In the .sleeve CSS rule, add the border-left-style property with the value solid.
+
+Step 81
+Your border should be visible now. If no color is set, black is used by default.
+
+But to make your code more readable, it's better to set the border color explicitly.
+
+In the .sleeve CSS rule, add the border-left-color property with the value black.
+
+Step 82
+The border-left shorthand property lets you to set the left border's width, style, and color at the same time.
+
+Here is the syntax:
+
+border-left: width style color;
+In the .sleeve CSS rule, replace the border-left-width, border-left-style, and border-left-color properties with the border-left shorthand property. The values for the width, style, and color of the left border should be the same.
+
+Step 83
+Your marker is looking good. But to make it look even more realistic, you can change the border style to double solid borders.
+
+For the border-left shorthand property, change the border style value from solid to double.
