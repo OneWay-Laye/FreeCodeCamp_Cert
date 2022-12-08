@@ -223,3 +223,45 @@ It would be nicer to have the label text appear above the form elements.
 Select all input, textarea, and select elements, and make them take up the full width of their parent elements.
 
 Also, add 10px of margin to the top of the selected elements. Set the other margins to 0.
+
+Step 49
+For the second fieldset, you want the input and label text to appear on the same line.
+
+Start, by giving the input elements in the second fieldset a class of inline.
+
+Step 50
+Select only the .inline elements, and give them width of unset. This will remove the earlier rule which set all the input elements to width: 100%.
+
+Step 51
+Add some space between the .inline elements and the label text, by giving a right margin of 0.5em. Also, set all the other margin to 0.
+
+Step 52
+If you look close enough, you will notice the .inline elements are too high on the line.
+
+To combat this, set the vertical-align property to middle.
+
+Step 53
+To make the input and textarea elements blend in with the background theme, set their background-color to #0a0a23. Then, give them a 1px, solid border with a color of #0a0a23.
+
+Step 54
+Currently, if you type in the input or textarea elements, you will not be able to see the text. Also, their height is too small to be easy to use.
+
+Fix this, by setting the color to #ffffff, and setting their min-height to 2em.
+
+Step 55
+You want the select element to remain with a white background, but now it is not getting the same min-height as the input and textarea elements.
+
+Move the min-height property and value so that all three element types have the same min-height value, and the select element still has a white background.
+
+Step 56
+To style the submit button, you can use an attribute selector, which selects an element based on the given attribute value. Here is an example:
+
+input[name="password"]
+The above selects input elements with a name attribute value of password.
+
+Now, use the attribute selector to style the submit button with a display of block, and a width of 60%.
+
+Step 57
+With a display of block the submit button sits flush against the left edge of its parent.
+
+Use the same technique used to center the form to center the submit button.
