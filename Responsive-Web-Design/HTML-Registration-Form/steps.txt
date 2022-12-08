@@ -58,3 +58,89 @@ Step 16
 The rem unit stands for root em, and is relative to the font size of the html element.
 
 As label elements are inline by default, they are all displayed side by side on the same line, making their text hard to read. To make them appear on separate lines, add display: block to the label element, and add a margin of 0.5rem 0, to separate them from each other.
+
+Step 17
+Nest an input element within each label. Be sure to add each input after the label text, and include a space after the colon.
+
+Step 18
+Following accessibility best practices, link the input elements and the label elements together using the for attribute.
+
+Use first-name, last-name, email, and new-password as values for the respective id attributes.
+
+Step 19
+Specifying the type attribute of a form element is important for the browser to know what kind of data it should expect. If the type is not specified, the browser will default to text.
+
+Give the first two input elements a type attribute of text, the third a type attribute of email, and the fourth a type attribute of password.
+
+The email type only allows emails with a @ and a . in the domain. The password type obscures the input, and warns if the site does not use HTTPS.
+
+Step 20
+The first input element with a type of submit is automatically set to submit its nearest parent form element.
+
+To handle the form submission, after the last fieldset element add an input element with the type attribute set to submit and the value attribute set to Submit.
+
+Step 21
+At this point, you should be able to submit the form. However, you might notice not much happens.
+
+To make the form more interactive, add the required attribute to the input elements in the first fieldset.
+
+Now, if you try to submit the form without filling in the required fields, you will see an error message.
+
+Step 22
+Certain type attribute values come with built-in form validation. For example, type="email" requires that the value be a valid email address.
+
+Add custom validation to the password input element, by adding a minlength attribute with a value of 8. Doing so prevents inputs of less than 8 characters being submitted.
+
+Step 23
+With type="password" you can use the pattern attribute to define a regular expression that the password must match to be considered valid.
+
+Add a pattern attribute to the password input element to require the input match: [a-z0-5]{8,}
+
+The above is a regular expression which matches eight or more lowercase letters or the digits 0 to 5. Then, remove the minlength attribute, and try it out.
+
+Step 24
+Let us go to the next part of the registration form. This section will ask for the type of account the user is opening, and will confirm the user has read the terms and conditions.
+
+Start by adding three label elements to the second fieldset.
+
+Step 25
+Users will be allowed to choose either a Personal Account or Business Account.
+
+To do this, within each of the first two label elements, add one input element with type="radio".
+
+Step 26
+For the terms and conditions, add an input with a type of checkbox to the third label element. Make this input element required because users should not sign up without reading the terms and conditions.
+
+Step 27
+Within each corresponding label element, and immediately after the input element, add a space and add the following text:
+
+Personal Account
+Business Account
+I accept the terms and conditions
+
+Step 28
+You only want one radio input to be selectable at a time. However, the form does not know the radio inputs are related.
+
+To relate the radio inputs, give them the same name attribute with a value of account-type. Now, it is not possible to select both radio inputs at the same time.
+
+Step 29
+Follow accessibility best practices by linking the input elements and the label elements in the second fieldset.
+
+Use personal-account, business-account, and terms-and-conditions as values for the respective id attributes.
+
+Step 30
+To finish this fieldset off, link the text terms and conditions in the third label to the following location:
+
+https://www.freecodecamp.org/news/terms-of-service/
+
+Step 31
+Moving on to the final fieldset. What if you wanted to allow a user to upload a profile picture?
+
+Well, the input type file allows just that. Add a label with the text Upload a profile picture: , and add an input accepting a file upload.
+
+Step 32
+Add another label after the first, with the text Input your age (years): . Then, nest an input with the type of number.
+
+Next, add a min attribute to the input with a value of 13 because users under the age of 13 should not register. Also, users probably will not be over the age of 120; add a max attribute with a value of 120.
+
+Now, if someone tries to submit the form with values outside of the range, a warning will appear, and the form will not submit. Give it a try.
