@@ -144,3 +144,82 @@ Add another label after the first, with the text Input your age (years): . Then,
 Next, add a min attribute to the input with a value of 13 because users under the age of 13 should not register. Also, users probably will not be over the age of 120; add a max attribute with a value of 120.
 
 Now, if someone tries to submit the form with values outside of the range, a warning will appear, and the form will not submit. Give it a try.
+
+Step 33
+Adding a dropdown to the form is easy with the select element. The select element is a container for a group of option elements, and the option element acts as a label for each dropdown option. Both elements require closing tags.
+
+Start, by adding a select element below the two label elements. Then, nest 5 option elements within the select element.
+
+Step 34
+Nest the select element (with its option elements) within a label element with the text How did you hear about us?. The text should come before the select element.
+
+Step 35
+The dropdown options are currently empty. To give them content, add the following text to each subsequent option element:
+
+(select one)
+freeCodeCamp News
+freeCodeCamp YouTube Channel
+freeCodeCamp Forum
+Other
+
+Step 36
+Submitting the form with an option selected would not send a useful value to the server. As such, each option needs to be given a value attribute. Without which, the text content of the option will be submitted to the server.
+
+Give the first option a value of "", and the subsequent option elements value attributes from 1 to 4.
+
+Step 37
+The textarea element acts like an input element of type text, but comes with the added benefit of being able to receive multi-line text, and an initial number of text rows and columns.
+
+Users will be able to register with a bio. Add a label with the text Provide a bio: at the end of the fieldset. Add a textarea element inside the label element. Note that the textarea requires a closing tag.
+
+Step 38
+Link the applicable form elements and their label elements together.
+
+Use profile-picture, age, referrer, and bio as values for the respective id attributes.
+
+Step 39
+The textarea appears too small. To give it an initial size, you can add the rows and cols attributes.
+
+Add an initial size of 3 rows and 30 columns.
+
+Step 40
+To give Campers an idea of what to put in their bio, the placeholder attribute is used. The placeholder accepts a text value, which is displayed until the user starts typing.
+
+Give the textarea a placeholder of I like coding on the beach....
+
+Step 41
+With form submissions, it is useful, and good practice, to provide each submittable element with a name attribute. This attribute is used to identify the element in the form submission.
+
+Give each submittable element a unique name attribute of your choosing, except for the two radio inputs.
+
+Step 42
+The HTML for the registration form is finished. Now, you can spruce it up a bit.
+
+Start by changing the font to Tahoma, and the font size to 16px in the body.
+
+Step 43
+Center the h1 and p elements by giving them a margin of 1em auto. Then, align their text in the center as well.
+
+Step 44
+Center the form element, by giving it a margin of 0 auto. Then, fix its size to a maximum width of 500px, and a minimum width of 300px. In between that range, allow it to have a width of 60vw.
+
+Step 45
+During development, it is useful to see the fieldset default borders. However, they make the content appear too separated.
+
+Remove the border, and add 2rem of padding only to the top and bottom of each fieldset. Be sure to remove the padding from the left and right.
+
+Step 46
+To give the fieldset elements a bit of separation, select them and give them a border-bottom of 3px solid #3b3b4f.
+
+Step 47
+The border of the last fieldset element looks a little out of place. You can select the last element of a specific type using the last-of-type CSS pseudo-class, like this:
+
+p:last-of-type { }
+That will select the last p element. Create a new selector that targets the last fieldset element and set its border-bottom to none.
+
+Step 48
+It would be nicer to have the label text appear above the form elements.
+
+Select all input, textarea, and select elements, and make them take up the full width of their parent elements.
+
+Also, add 10px of margin to the top of the selected elements. Set the other margins to 0.
