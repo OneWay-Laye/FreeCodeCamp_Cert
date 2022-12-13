@@ -14,13 +14,13 @@
     </div>
     <form action="" id="survey-form">
         <label for="name" id="name-label">
-            Name <input id="name" type="text" placeholder="Enter your name">
+            Name <input id="name" type="text" placeholder="Enter your name" required>
         </label>
         <label for="email" id="email-label">
-            Email <input id="email" type="text" placeholder="Enter your Email">
+            Email <input id="email" type="text" placeholder="Enter your Email" required>
         </label>
         <label for="age" id="number-label">
-            Age <input id="number" type="number" placeholder="Age" min="5" max="100">
+            Age <input id="number" type="number" placeholder="Age" min="5" max="100" required>
         </label>
         <label for="">Select your level of expertice. 
             <select name="" id="dropdown">
@@ -34,9 +34,11 @@
             <input type="radio" name="sample" id="">
             <input type="radio" name="sample" id="">
         </label>
-        <label for="">
-            <input type="checkbox" name="" id="" value="">
-            <input type="checkbox" name="" id="" value="">
+        <label for="">What skills would you like to work on? (check all that apply)
+            <input type="checkbox" name="prefer" id="" class="inline" value="">Basic Knowledge
+            <input type="checkbox" name="prefer" id="" class="inline" value="">Basic Roll
+            <input type="checkbox" name="prefer" id="" class="inline" value="">Curved Roll
+            <input type="checkbox" name="prefer" id="" class="inline" value="">Pick-up Spare
         </label>
         <label for="">
             <textarea name="" id="" cols="30" rows="10"></textarea>
