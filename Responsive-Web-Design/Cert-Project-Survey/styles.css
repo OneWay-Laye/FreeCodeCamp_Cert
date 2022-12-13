@@ -14,8 +14,14 @@ p {
 form {
     background-color: rgba(42, 42, 221, 0.9);
     color: white;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 label {
-    
+    display: block;
+}
+
+input {
+    width: 100%;
 }
