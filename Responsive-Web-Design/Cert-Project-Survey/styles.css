@@ -39,3 +39,7 @@ input {
 .inline {
     width: unset;
 }
+
+.checkbox {
+    display: inline-block;
+}
