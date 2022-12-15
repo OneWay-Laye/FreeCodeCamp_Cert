@@ -22,10 +22,12 @@ form {
 
 label {
     display: block;
+    margin: 10px;
+    margin-right: 20px;
 }
 
 input {
-    width: 97%;
+    width: 100%;
 }
 
 /* ID */
@@ -38,6 +40,8 @@ input {
 
 .inline {
     width: unset;
+    vertical-align: middle;
+    margin: 0 0.5em 0 0;
 }
 
 .checkbox {
